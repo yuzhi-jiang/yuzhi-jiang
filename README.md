@@ -1,5 +1,9 @@
-### Hi there 👋
-
+### 👋 Hi I am yuzhi-jiang
+#### I love exploring the unknown and programming
+#### Motto: Change the world with code
+- 📫 mail:yuzhi.jiang@foxmail.com
+- 🔗 https://yuzhi-jiang.github.io/
+      
 <!--
 **yuzhi-jiang/yuzhi-jiang** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
 
