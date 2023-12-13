@@ -3,7 +3,7 @@
 #### Motto: Change the world with code
 - 📫 mail:yuzhi.jiang@foxmail.com
 - 🔗 https://yuzhi-jiang.github.io/
-      
+- 🔗 http://blog.anml.cn/
 <!--
 **yuzhi-jiang/yuzhi-jiang** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
 
