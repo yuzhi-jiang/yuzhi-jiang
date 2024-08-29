@@ -18,3 +18,8 @@ Here are some ideas to get you started:
 - 😄 Pronouns: ...
 - ⚡ Fun fact: ...
 -->
+
+<p align="left">
+  <img height="200px" src="https://github-readme-stats.vercel.app/api/?username=yuzhi-jiang&custom_title=%20GitHub%20Stats&show_icons=true&theme=shadow_green&rank_icon=percentile&theme=transparent&card_width=150" alt="yuzhi-jiang" />
+  <img height="200px" src="https://github-readme-stats.vercel.app/api/top-langs/?username=yuzhi-jiang&hide=HTML,CSS,SCSS,LESS,PHP&layout=compact&card_width=150" alt="yuzhi-jiang" />
+</p>
