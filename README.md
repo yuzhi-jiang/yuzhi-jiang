@@ -35,11 +35,15 @@
 |---|---|
 | **[mcp_client](https://github.com/yuzhi-jiang/mcp_client)** | 基于官方 MCP SDK 独立实现的 Python **MCP 客户端**：多 Server 会话、stdio / SSE 双传输、JSON-Schema 参数校验、有界工具调用循环。**72 项测试**（含真实 stdio 端到端），67% 行覆盖，兼容 MCP SDK 1.x / 2.x。 |
 | **[netdisk](https://github.com/yuzhi-jiang/netdisk)** · **[netdisk-client](https://github.com/yuzhi-jiang/netdisk-client)** | **Spring Cloud + Hadoop(HDFS)** 的分布式网盘系统：Nacos 注册发现、Redis、RabbitMQ、MySQL，前端 Vue 3 + TypeScript。 |
-| **[srvctl](https://github.com/yuzhi-jiang/srvctl)** | **Secure Server Controller**：让 AI 代理操作远程服务器而拿不到任何凭据——代理只看到服务器编码，凭据 AES-256-GCM 加密存储，60 万次 PBKDF2 派生。 |
 | **[videwoWhisper](https://github.com/yuzhi-jiang/videwoWhisper)** | 基于 Whisper 的视频字幕提取工具：自动抽音频、断句、翻译与自定义词典替换。 |
 | **[lineMarkdown](https://github.com/yuzhi-jiang/lineMarkdown)** | React + TypeScript + Supabase 的在线 Markdown 编辑器：实时预览、语法高亮、流程图、数学公式。 |
 
-> 另有本地工程原型 **KeyDock**（macOS 本机凭据代理，Swift 6 / SwiftUI，未开源）：解决「Agent 不能持有密码」——按 UID/PID + 代码签名 + 应用祖先核验调用方，身份不可核验时仅单次批准、不记忆授权。
+### 安全工程
+
+两个自研工具，同一条思路：**让 AI 代理能干活，但拿不到凭据**。
+
+- **[srvctl](https://github.com/yuzhi-jiang/srvctl)（开源）** — Secure Server Controller：代理只拿到服务器编码，看不到 IP、端口、用户名、密码或 SSH Key；凭据用 AES-256-GCM 加密存于 `~/.srvctl/data.enc`（权限 600），密钥由 PBKDF2（60 万次迭代 + 随机盐）派生，解密结果只用于建立 SSH 连接。
+- **KeyDock（本地工程原型，未开源）** — macOS 本机凭据代理，Swift 6 / SwiftUI，零第三方依赖：按 UID/PID + 代码签名哈希 + 应用祖先核验调用方，**身份不可核验时仅单次批准、不记忆授权**；密码不进 argv / 环境变量 / 临时文件 / 日志 / CLI 响应。
 
 ### 开源贡献
 
